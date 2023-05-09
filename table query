@@ -1,0 +1,10 @@
+CREATE TABLE patients (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(255) NOT NULL,
+  last_name VARCHAR(255) NOT NULL,
+  dob DATE NOT NULL,
+  gender ENUM('Male', 'Female', 'Other') NOT NULL,
+  diagnosis VARCHAR(255),
+  covid VARCHAR(255),
+  address VARCHAR(255)
+);
